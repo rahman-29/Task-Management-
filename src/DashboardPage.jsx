@@ -6,6 +6,7 @@ import MyTasks from "./components/MyTasks"; // Import the MyTasks component
 import './Style.css';
 import Dashboard from "./components/Dashboard";
 import AssignTask from "./components/AssignTask";
+import LogoutConfirm from "./components/Logout";
 
 const DashboardPage = ({ userId }) => {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -55,6 +56,8 @@ const DashboardPage = ({ userId }) => {
         return <h1>Completed Task</h1>; 
       case "Profile":
         return <h1>Profile</h1>;
+      case "Logout":
+        return <LogoutConfirm to="/logout-confirm" />;
       default:
         return <h1>Welcome to the Dashboard</h1>;
     }
