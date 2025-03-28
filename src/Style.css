@@ -1,0 +1,39 @@
+/* In your Style.css or similar file */
+.flex {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;  /* Sidebar width */
+    background-color: #ddd;
+    padding: 15px;
+    position: fixed;  /* Fix the sidebar in place */
+    height: 100%;    /* Make sure it takes up full height */
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .main-content {
+    margin-left: 300px;  /* Start after the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);  /* Ensure content takes up the rest of the space */
+    background-color: #f9f9f9;
+    overflow-y: auto;  /* Add scrolling if content overflows */
+  }
+  
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
